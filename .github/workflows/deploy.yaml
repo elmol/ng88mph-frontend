@@ -1,0 +1,29 @@
+name: build and deploy to skynet
+
+on:
+  push:
+    branches: [ ui-v3 ]
+  pull_request:
+    branches: [ ui-v3 ]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 12.x
+
+      - run: npm install
+      - run: npm install -g @angular/cli
+      - run: ng build
+
+      - name: Deploy to Skynet
+        uses: SkynetLabs/deploy-to-skynet-action@v2
+        with:
+          upload-dir: ./dist/ng88mph-frontend
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          registry-seed: ${{ secrets.SKYNET_REGISTRY_SEED || '' }}
