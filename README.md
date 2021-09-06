@@ -2,7 +2,7 @@
 
 ## 88mph v3 skapps
 
-https://6g0cs6j7qv0dchmr1qtsrvi0j4ui6ofdka7m852da5ejbar5etjr6fo.siasky.net/
+https://wxhiojortldjyegtkx.hns.siasky.net/
 
 ### Host Your Hack's Front-End On Skynet (~$8000 Prize Pool) -
 
@@ -10,7 +10,7 @@ https://6g0cs6j7qv0dchmr1qtsrvi0j4ui6ofdka7m852da5ejbar5etjr6fo.siasky.net/
 
 - [x] Create or fork a DeFi tool and host the front-end on Skynet.
 - [x] adding a working "Save to Homescreen" link in the Github repo (example) | 3 shares
-- [ ] using an ENS or HNS decentralized domain name for the web app | 1 share
+- [x] using an ENS or HNS decentralized domain name for the web app | 1 share (https://wxhiojortldjyegtkx.hns.siasky.net/)
 - [x] use the Deploy to Skynet Github action for building and deploying your frontend automatically | 1 share
 - [ ] hosting off-chain, mutable application data on Skynet using SkyDB or MySky | 1 share
 
